@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window
+	x:Class="LiteProject.Log" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Title="LiteProject"
+	Height="300"
+	Width="300">
+	<Grid>
+		<ListView
+			Grid.Column="0"
+			Grid.Row="0"
+			Width="290"
+			Height="268"
+			x:Name="LogList"
+			Margin="0,0,0,0"
+			HorizontalAlignment="Stretch"
+			VerticalAlignment="Stretch" />
+	</Grid>
+</Window>

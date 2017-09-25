@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window
+	x:Class="LiteProject.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Title="GreenVsBlue"
+	WindowStyle="None"
+	MinWidth="306"
+	MaxWidth="306"
+	Width="306"
+	Height="325"
+	MaxHeight="325"
+	MinHeight="325">
+	<Grid>
+		<Grid.Background>
+			<LinearGradientBrush
+				EndPoint="1,0">
+				<LinearGradientBrush.GradientStops>
+					<GradientStop
+						Color="#FF80A6F2"
+						Offset="0" />
+					<GradientStop
+						Color="#FF2D94E2"
+						Offset="1" />
+				</LinearGradientBrush.GradientStops>
+			</LinearGradientBrush>
+		</Grid.Background>
+		<Canvas
+			x:Name="FirstCanvas"
+			Grid.Column="0"
+			Grid.Row="0"
+			Width="100"
+			HorizontalAlignment="Left"
+			Height="100"
+			VerticalAlignment="Top"
+			MouseLeftButtonDown="Canvas_MouseLeftButtonDown"
+			Margin="0,0,0,0">
+			<Canvas.Background>
+				<LinearGradientBrush
+					EndPoint="1,0">
+					<LinearGradientBrush.GradientStops>
+						<GradientStop
+							Color="#FF80A6F2"
+							Offset="0" />
+						<GradientStop
+							Color="#FF2D94E2"
+							Offset="1" />
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+			</Canvas.Background>
+		</Canvas>
+		<Button
+			x:Name="TickButton"
+			Content="Часики"
+			Click="TickButton_Click"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="114,139,0,0"
+			Width="75"
+			Height="23">
+			<Button.Background>
+				<LinearGradientBrush
+					EndPoint="1,0">
+					<LinearGradientBrush.GradientStops>
+						<GradientStop
+							Color="#FFEF7F8F"
+							Offset="0" />
+						<GradientStop
+							Color="#FFE02C35"
+							Offset="1" />
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+			</Button.Background>
+		</Button>
+		<Button
+			x:Name="Tatatata"
+			Content="Пулемет"
+			Click="Tatatata_Click"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="8,108,0,0"
+			Width="75"
+			Height="23"
+			RenderTransformOrigin="0.5,0.5">
+			<Button.Background>
+				<LinearGradientBrush
+					EndPoint="1,0">
+					<LinearGradientBrush.GradientStops>
+						<GradientStop
+							Color="#FF80A6F2"
+							Offset="0" />
+						<GradientStop
+							Color="#FF2D94E2"
+							Offset="1" />
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+			</Button.Background>
+		</Button>
+		<Button
+			x:Name="FlyButton"
+			Click="Fly_Click"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="8,139,0,0"
+			Width="75"
+			Height="23"
+			Content="Выстрел">
+			<Button.Background>
+				<LinearGradientBrush
+					EndPoint="1,0">
+					<LinearGradientBrush.GradientStops>
+						<GradientStop
+							Color="#FF80A6F2"
+							Offset="0" />
+						<GradientStop
+							Color="#FF2D94E2"
+							Offset="1" />
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+			</Button.Background>
+		</Button>
+		<Button
+			x:Name="RainButton"
+			Content="Дождь"
+			Click="RainButton_Click"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="114,170,0,0"
+			Width="75"
+			Height="23">
+			<Button.Background>
+				<LinearGradientBrush
+					EndPoint="1,0">
+					<LinearGradientBrush.GradientStops>
+						<GradientStop
+							Color="#FFEF7F8F"
+							Offset="0" />
+						<GradientStop
+							Color="#FFE02C35"
+							Offset="1" />
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+			</Button.Background>
+		</Button>
+		<Button
+			x:Name="ChelovechekButton"
+			Click="ChelovechekButton_Click"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="114,108,0,0"
+			Width="75"
+			Height="23"
+			Content="Человечки">
+			<Button.Background>
+				<LinearGradientBrush
+					EndPoint="1,0">
+					<LinearGradientBrush.GradientStops>
+						<GradientStop
+							Color="#FFEF7F8F"
+							Offset="0" />
+						<GradientStop
+							Color="#FFE02C35"
+							Offset="1" />
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+			</Button.Background>
+		</Button>
+		<Canvas
+			x:Name="ActivCanvas"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="100,0,0,0"
+			Width="100"
+			MouseLeftButtonDown="Canvas_MouseLeftButtonDown"
+			Height="100">
+			<Canvas.Background>
+				<LinearGradientBrush
+					EndPoint="1,0">
+					<LinearGradientBrush.GradientStops>
+						<GradientStop
+							Color="#FFEF7F8F"
+							Offset="0" />
+						<GradientStop
+							Color="#FFE02C35"
+							Offset="1" />
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+			</Canvas.Background>
+		</Canvas>
+		<Canvas
+			Grid.Column="0"
+			Grid.Row="0"
+			VerticalAlignment="Top"
+			Height="100"
+			Width="100"
+			HorizontalAlignment="Left"
+			MouseLeftButtonDown="Canvas_MouseLeftButtonDown"
+			Margin="200,0,0,0"
+			x:Name="SecondCanvas">
+			<Canvas.Background>
+				<LinearGradientBrush
+					EndPoint="1,0">
+					<LinearGradientBrush.GradientStops>
+						<GradientStop
+							Color="#FF60B544"
+							Offset="0" />
+						<GradientStop
+							Color="#FF599B2D"
+							Offset="1" />
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+			</Canvas.Background>
+		</Canvas>
+		<Button
+			Content="Пулемет"
+			x:Name="Tatatata2"
+			Click="Tatatata2_Click"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="219,108,0,0"
+			Width="75"
+			Height="23">
+			<Button.Background>
+				<LinearGradientBrush
+					EndPoint="1,0">
+					<LinearGradientBrush.GradientStops>
+						<GradientStop
+							Color="#FF60B544"
+							Offset="0" />
+						<GradientStop
+							Color="#FF599B2D"
+							Offset="1" />
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+			</Button.Background>
+		</Button>
+		<Button
+			x:Name="FlyButton2"
+			Content="Выстрел"
+			Click="FlyButton2_Click"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="219,139,0,0"
+			Width="75"
+			Height="23">
+			<Button.Background>
+				<LinearGradientBrush
+					EndPoint="1,0">
+					<LinearGradientBrush.GradientStops>
+						<GradientStop
+							Color="#FF60B544"
+							Offset="0" />
+						<GradientStop
+							Color="#FF599B2D"
+							Offset="1" />
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+			</Button.Background>
+		</Button>
+		<Label
+			Content="HP 0/0"
+			x:Name="HP1"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="0,287,0,0"
+			Width="67"
+			Height="23" />
+		<Label
+			Content="HP 0/0"
+			x:Name="HP2"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="227,287,0,0"
+			Width="67"
+			Height="23" />
+		<Button
+			Content="Auto"
+			x:Name="AutoButton"
+			Click="AutoButton_Click"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="114,232,0,0"
+			Width="75"
+			Height="23">
+			<Button.Background>
+				<LinearGradientBrush
+					EndPoint="1,0">
+					<LinearGradientBrush.GradientStops>
+						<GradientStop
+							Color="#FFEF7F8F"
+							Offset="0" />
+						<GradientStop
+							Color="#FFE02C35"
+							Offset="1" />
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+			</Button.Background>
+		</Button>
+		<Label
+			x:Name="LogText"
+			FontWeight="Bold"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="83,290,0,0"
+			Width="136"
+			Height="28" />
+		<Button
+			Content="Log"
+			x:Name="button1"
+			Click="button1_Click"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="114,201,0,0"
+			Width="75"
+			Height="23">
+			<Button.Background>
+				<LinearGradientBrush
+					EndPoint="1,0">
+					<LinearGradientBrush.GradientStops>
+						<GradientStop
+							Color="#FFEF7F8F"
+							Offset="0" />
+						<GradientStop
+							Color="#FFE02C35"
+							Offset="1" />
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+			</Button.Background>
+		</Button>
+		<Button
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			Width="75"
+			Content="Exit"
+			x:Name="ExitButton"
+			Click="ExitButton_Click"
+			Height="23"
+			VerticalAlignment="Top"
+			Margin="114,259,0,0">
+			<Button.Background>
+				<LinearGradientBrush
+					EndPoint="1,0">
+					<LinearGradientBrush.GradientStops>
+						<GradientStop
+							Color="#FFEF7F8F"
+							Offset="0" />
+						<GradientStop
+							Color="#FFE02C35"
+							Offset="1" />
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+			</Button.Background>
+		</Button>
+	</Grid>
+</Window>

@@ -1,0 +1,12 @@
+C:\MyDOC\Проекты\C#\Developer\LiteProject\LiteProject\bin\Debug\LiteProject.exe
+C:\MyDOC\Проекты\C#\Developer\LiteProject\LiteProject\bin\Debug\LiteProject.pdb
+C:\MyDOC\Проекты\C#\Developer\LiteProject\LiteProject\obj\Debug\ResolveAssemblyReference.cache
+C:\MyDOC\Проекты\C#\Developer\LiteProject\LiteProject\obj\Debug\Window1.baml
+C:\MyDOC\Проекты\C#\Developer\LiteProject\LiteProject\obj\Debug\Window1.g.cs
+C:\MyDOC\Проекты\C#\Developer\LiteProject\LiteProject\obj\Debug\App.g.cs
+C:\MyDOC\Проекты\C#\Developer\LiteProject\LiteProject\obj\Debug\LiteProject_MarkupCompile.cache
+C:\MyDOC\Проекты\C#\Developer\LiteProject\LiteProject\obj\Debug\LiteProject.g.resources
+C:\MyDOC\Проекты\C#\Developer\LiteProject\LiteProject\obj\Debug\LiteProject.exe
+C:\MyDOC\Проекты\C#\Developer\LiteProject\LiteProject\obj\Debug\LiteProject.pdb
+C:\MyDOC\Проекты\C#\Developer\LiteProject\LiteProject\obj\Debug\Log.baml
+C:\MyDOC\Проекты\C#\Developer\LiteProject\LiteProject\obj\Debug\Log.g.cs
